@@ -21,8 +21,8 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-    ruby2337 = docker.build("warecorpdev/base-ruby:2.3-37-${env.BUILD_ID}", "--build-arg BASE_IMAGE_TAG=3.7-latest -f 2.3/alpine3.7/Dockerfile")
-    ruby2338 = docker.build("warecorpdev/base-ruby:2.3-38-${env.BUILD_ID}", "--build-arg BASE_IMAGE_TAG=3.8-latest -f 2.3/alpine3.8/Dockerfile")
+    ruby2337 = docker.build("warecorpdev/base-ruby:2.3-37-${env.BUILD_ID}", "--build-arg BASE_IMAGE_TAG=3.7-latest ./2.3/alpine3.7/")
+    ruby2338 = docker.build("warecorpdev/base-ruby:2.3-38-${env.BUILD_ID}", "--build-arg BASE_IMAGE_TAG=3.8-latest ./2.3/alpine3.8/")
 
     }
 
