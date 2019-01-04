@@ -38,10 +38,10 @@ node {
         docker.withRegistry('', 'dockerwc') {
             ruby2337.push()
             ruby2338.push()
+            ruby2437.push()
             ruby2438.push()
-            ruby2438.push()
+            ruby2537.push()
             ruby2538.push()
-            ruby2638.push()
             ruby2337.push("2.3-37-latest")
             ruby2338.push("2.3-38-latest")
             ruby2437.push("2.4-37-latest")
