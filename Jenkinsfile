@@ -51,7 +51,7 @@ node {
         }
     }
     stage('Post') {
-    slackSend botUser: true, channel: 'docker-build', message: 'Alpine Images rebuilded', teamDomain: 'warecorp', tokenCredentialId: 'jenkins-token'
+    slackSend botUser: true, channel: 'docker-build', message: 'Ruby base images rebuilded', teamDomain: 'warecorp', tokenCredentialId: 'jenkins-token'
     }
   }
 }
