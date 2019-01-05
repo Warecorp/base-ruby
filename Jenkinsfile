@@ -49,8 +49,8 @@ node {
             ruby2537.push("2.5-37-latest")
             ruby2538.push("2.5-38-latest")
         }
-    }
     stage('Post') {
     slackSend botUser: true, channel: 'docker-build', message: 'Ruby base image rebuilded', teamDomain: 'warecorp', tokenCredentialId: 'jenkins-token'
+    }
   }
 }
