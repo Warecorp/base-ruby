@@ -22,7 +22,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-    ruby22jessie = docker.build("warecorpdev/base-ruby:2.2-jessie-${env.BUILD_ID}", "./2.3/alpine3.7/")
+    ruby22jessie = docker.build("warecorpdev/base-ruby:2.2-jessie-${env.BUILD_ID}", "./2.2/jessie/")
     ruby2337 = docker.build("warecorpdev/base-ruby:2.3-37-${env.BUILD_ID}", "--build-arg BASE_IMAGE_TAG=3.7-latest ./2.3/alpine3.7/")
     ruby2338 = docker.build("warecorpdev/base-ruby:2.3-38-${env.BUILD_ID}", "--build-arg BASE_IMAGE_TAG=3.8-latest ./2.3/alpine3.8/")
     ruby2437 = docker.build("warecorpdev/base-ruby:2.4-37-${env.BUILD_ID}", "--build-arg BASE_IMAGE_TAG=3.7-latest ./2.4/alpine3.7/")
